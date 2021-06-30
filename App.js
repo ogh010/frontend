@@ -1,19 +1,16 @@
-import React,{useState} from 'react';
+import React from 'react';
+import Counter from './Counter';
+import Header from './Header';
+import Footer from './Footer';
 
-function Counter() {
-    let[count,setCount]=useState(0);
-    const add = () =>{
-        setCount(++count)
-    }
-
+const App = () => {
     return (
-        <div style={{textAlign:'center'}}>
-            <header>오가희</header>
-            <h1>{count}</h1>
-            <button onClick={add}>클릭</button>
-            <footer>ogh010@github.com</footer>
+        <div>
+            <Header />
+            <Counter />
+            <Footer />
         </div>
     );
 };
 
-export default Counter;
+export default App;
